@@ -17,9 +17,7 @@ public abstract class ServiceLifetimeAttributeBase : InjectionAttribute
     /// Implementation type of <see cref="ServiceType"/>. If null on registration <see cref="ImplementationType"/> will be equals with type which contains this attribute
     /// </summary>
     public Type? ImplementationType { get; }
-    
-    //public bool DefaultBehavior { get; } //TODO - Need analyse
-    
+
     /// <summary>
     /// Service lifetime
     /// </summary>
@@ -32,7 +30,6 @@ public abstract class ServiceLifetimeAttributeBase : InjectionAttribute
     protected ServiceLifetimeAttributeBase(Type serviceType)
     {
         ServiceType = serviceType;
-        //DefaultBehavior = true; //TODO - Need analyse
     }
 
     /// <summary>

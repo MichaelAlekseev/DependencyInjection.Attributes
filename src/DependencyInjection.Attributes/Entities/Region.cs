@@ -3,7 +3,7 @@ namespace DependencyInjection.Attributes.Entities;
 /// <summary>
 /// Representation of registration region
 /// </summary>
-public struct Region
+public readonly struct Region
 {
     /// <summary>
     /// Name of region

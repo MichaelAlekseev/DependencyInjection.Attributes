@@ -6,7 +6,7 @@ namespace DependencyInjection.Attributes.Utils;
 /// Attribute for register hosted service in dependency injection container
 /// </summary>
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]
-public class HostedServiceAttribute : InjectionAttribute
+public sealed class HostedServiceAttribute : InjectionAttribute
 {
     /// <summary>
     /// Initialize new instance of <see cref="HostedServiceAttribute"/> for default region
